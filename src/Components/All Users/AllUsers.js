@@ -65,7 +65,7 @@ const AllUsers = (props) => {
 
     //** Post Image API */ 
     useEffect(() => {
-        const url = `https://www.splashbase.co/api/v1/images/${id}`
+        const url = `http://www.splashbase.co/api/v1/images/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setPostImage(data))
